@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: montserret;
+    background-color: #000000;
+    color: #fff;
+}
+
+nav {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-een;
+    padding: 0rem 2rem;
+    text-decoration: none;
+    background-color: #000000;
+}
+
+
+nav .line {
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    margin: 10px 0 0 0;
+    background-color: #DEFE01;
+}
+
+nav ul li {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+nav ul li:hover {
+    opacity: 0.8;
+}
+nav ul li a {
+    opacity: 1;
+}
+
+.navh1 {
+    color: #DEFE01;
+    padding-left: 2%;
+    padding-right: 22%;
+    font-size: 120%;
+    display: inline-block;
+    position: relative;
+}
+@media(min-width:480px) {
+    .navh1 {
+        padding-right: 65%;
+    }
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #DEFE01;
+}
+
+@media(max-width:480px) {
+    nav a {
+        width: 50%;
+    }
+}
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.name {
+    margin-top: 50px;
+    padding: 1rem 2rem;
+    font-weight: 20;
+    font-size: 180%;
+    color: #6b7278;
+}
+
+@media(max-width:480px) {
+    .name {
+        margin-top: 150px;
+    }
+}
+
+
+.underline {
+    color: #DEFE01;
+    font-size: 250%;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.icon {
+    margin-block: 0px;
+    width: 30px;
+    backgrnd-color: #DEFE01;
+    padding: 0px;
+    display: flex;
+}
+
+.fdiv {
+    padding-top: 0.01px;
+    top: 0;
+    background-color: #091114;
+    height: 95%;
+}
+
+
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -10px, 0);
+    }
+}
+.arrow {
+    text-align: center;
+}
+.bounce {
+    font-family: none;
+    width: 60px;
+    animation: bounce 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.bounce:hover {
+    animation: none;
+}
+
+@media(max-width:480px) {
+    .bounce {
+
+        margin-top: 225px;
+    }
+}
+
+.aboutdivc {
+    background-color: #000;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 97%;
+}
+
+.avdiv2 {
+    padding-top: 5rem;
+}
+
+#aboutme {
+    color: #DEFE01;
+    font-size: 200%;
+    font-weight: none;
+}
+
+p {
+    color: #6b7278;
+    line-height: 1;
+    font-size: 100%;
+}
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+var typed = new Typed(".namespan", {
+    strings: ["Ninja Grahics","hello"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+}
+
+)
+
+
+</script>
